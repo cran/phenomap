@@ -1,6 +1,8 @@
-7477da2eec3749bfa2761ca7a123029c *DESCRIPTION
-009648cf4a2d38b99271b95551d51719 *NAMESPACE
-5628603c4a800505fd5150caaf2cdeb1 *R/mapPheno.R
+48524aade2d478aaad1130fbd45aba6c *DESCRIPTION
+436bda18e760b0a9ff51096db947a1f0 *NAMESPACE
+a37de581eb09e306126439ff08465693 *NEWS.md
+29c759aabbc4751b14728ce2478eefb1 *R/mapPheno.R
+b35174e62499beba7c5fe39db8047ece *R/mapTrend.R
 ddbd65d8d7abd467b819907e78cb49f6 *inst/extdata/ExCrop_2016_001.tif
 a0908ef6808cd9b18f1a1e8dea2da786 *inst/extdata/ExCrop_2016_017.tif
 ade46f0f292548cf0b9b5f98ef882661 *inst/extdata/ExCrop_2016_033.tif
@@ -9,6 +11,12 @@ c74e9547ea2392b343be786b9f8f5d73 *inst/extdata/ExCrop_2016_049.tif
 1beae1b802fe532fc74cf527c8319799 *inst/extdata/ExCrop_2016_081.tif
 f558ef9d83ed8022a8e5105fac435eaa *inst/extdata/ExCrop_2016_097.tif
 a119e1bd95682156c560c0f0023b09c9 *inst/extdata/ExCrop_2016_113.tif
+026a4158d3c4b3f99f6e738b0222db99 *inst/extdata/Sample_Greenup_2011.tif
+df3a5cba63f85325c58fff7a1014c1b5 *inst/extdata/Sample_Greenup_2012.tif
+970d5ccca85db9363e9d8a88e649c24b *inst/extdata/Sample_Greenup_2013.tif
+aabbadd120287bad59bd4e6dca683f62 *inst/extdata/Sample_Greenup_2014.tif
+7d4fc6459a6b499dca3ab0e712c1d4a5 *inst/extdata/Sample_Greenup_2015.tif
+79d60f493f960238133ebecf1d951e25 *inst/extdata/Sample_Greenup_2016.tif
 8001e92574ed0163f532dabf0df07f34 *inst/extdata/TinyCrop_2016_001.tif
 87ece7dafe5b90d56f42803edc64440a *inst/extdata/TinyCrop_2016_017.tif
 7fe4d74638b12919cdca567be19e84a5 *inst/extdata/TinyCrop_2016_033.tif
@@ -32,4 +40,5 @@ d4ef0a07273729b87bf8c8e11580fb82 *inst/extdata/TinyCrop_2016_305.tif
 97581ef3cd324cd296f28761e4c617bc *inst/extdata/TinyCrop_2016_321.tif
 535a1515d500600a4fb7e83421905edb *inst/extdata/TinyCrop_2016_337.tif
 340accb8386e37fcf568006ca017afcb *inst/extdata/TinyCrop_2016_353.tif
-f971626194059f85fcea35200c5212e5 *man/mapPheno.Rd
+5da8ac8baf54b6879a0ee45b3fd90a60 *man/mapPheno.Rd
+af06b375f5686f41d8873bd3fd2ff405 *man/mapTrend.Rd
