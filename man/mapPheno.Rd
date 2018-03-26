@@ -59,30 +59,8 @@ parallel = FALSE
 n.cores = NA
 verbose = FALSE
 
-Sample.Greenup <- mapPheno(File_List = File_List, PhenoFactor = PhenoFactor,
-                           phase = phase, threshold = threshold, year = year,
-                           NDVI = NDVI, VIQ = VIQ, DOY = DOY, PR = PR,
-                           SnowExtent=SnowExtent,
-                           parallel = parallel, n.cores = n.cores,
-                           verbose = verbose)
 }
 \dontrun{
-
-fpath <- system.file("extdata", package="phenomap")
-File_List <- paste(fpath, list.files(path = fpath, pattern=c("TinyCrop_")), sep="/")
-File_List
-
-PhenoFactor = "VI"
-phase = "greenup"
-threshold = 0.5
-year = 2016
-NDVI = 1
-VIQ = 3
-DOY = 4
-PR = 5
-parallel = FALSE
-n.cores = NA
-verbose = TRUE
 
 Sample.Greenup <- mapPheno(File_List = File_List, PhenoFactor = PhenoFactor,
                            phase = phase, threshold = threshold, year = year,

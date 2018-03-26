@@ -1,7 +1,7 @@
-48524aade2d478aaad1130fbd45aba6c *DESCRIPTION
-436bda18e760b0a9ff51096db947a1f0 *NAMESPACE
-a37de581eb09e306126439ff08465693 *NEWS.md
-29c759aabbc4751b14728ce2478eefb1 *R/mapPheno.R
+0dbf67b20aa65c0f27e6d80b59e8e70e *DESCRIPTION
+b760a30f54b280b0b97291f1f76bdbc8 *NAMESPACE
+57c1c5e32f1b85e8e4fb4750116f4cac *NEWS.md
+169fe6463951bec336a2430f4bd2932f *R/mapPheno.R
 b35174e62499beba7c5fe39db8047ece *R/mapTrend.R
 ddbd65d8d7abd467b819907e78cb49f6 *inst/extdata/ExCrop_2016_001.tif
 a0908ef6808cd9b18f1a1e8dea2da786 *inst/extdata/ExCrop_2016_017.tif
@@ -40,5 +40,5 @@ d4ef0a07273729b87bf8c8e11580fb82 *inst/extdata/TinyCrop_2016_305.tif
 97581ef3cd324cd296f28761e4c617bc *inst/extdata/TinyCrop_2016_321.tif
 535a1515d500600a4fb7e83421905edb *inst/extdata/TinyCrop_2016_337.tif
 340accb8386e37fcf568006ca017afcb *inst/extdata/TinyCrop_2016_353.tif
-5da8ac8baf54b6879a0ee45b3fd90a60 *man/mapPheno.Rd
+60b3db2b12be7adec2898bd7eec10c51 *man/mapPheno.Rd
 af06b375f5686f41d8873bd3fd2ff405 *man/mapTrend.Rd

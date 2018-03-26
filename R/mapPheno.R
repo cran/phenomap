@@ -32,31 +32,31 @@
 #' n.cores = NA
 #' verbose = FALSE
 #'
-#' Sample.Greenup <- mapPheno(File_List = File_List, PhenoFactor = PhenoFactor,
-#'                            phase = phase, threshold = threshold, year = year,
-#'                            NDVI = NDVI, VIQ = VIQ, DOY = DOY, PR = PR,
-#'                            SnowExtent=SnowExtent,
-#'                            parallel = parallel, n.cores = n.cores,
-#'                            verbose = verbose)
+# Sample.Greenup <- mapPheno(File_List = File_List, PhenoFactor = PhenoFactor,
+#                            phase = phase, threshold = threshold, year = year,
+#                            NDVI = NDVI, VIQ = VIQ, DOY = DOY, PR = PR,
+#                            SnowExtent=SnowExtent,
+#                            parallel = parallel, n.cores = n.cores,
+#                            verbose = verbose)
 #' }
 #' \dontrun{
 #'
-#' fpath <- system.file("extdata", package="phenomap")
-#' File_List <- paste(fpath, list.files(path = fpath, pattern=c("TinyCrop_")), sep="/")
-#' File_List
-#'
-#' PhenoFactor = "VI"
-#' phase = "greenup"
-#' threshold = 0.5
-#' year = 2016
-#' NDVI = 1
-#' VIQ = 3
-#' DOY = 4
-#' PR = 5
-#' parallel = FALSE
-#' n.cores = NA
-#' verbose = TRUE
-#'
+# fpath <- system.file("extdata", package="phenomap")
+# File_List <- paste(fpath, list.files(path = fpath, pattern=c("TinyCrop_")), sep="/")
+# File_List
+# 
+# PhenoFactor = "VI"
+# phase = "greenup"
+# threshold = 0.5
+# year = 2016
+# NDVI = 1
+# VIQ = 3
+# DOY = 4
+# PR = 5
+# parallel = FALSE
+# n.cores = NA
+# verbose = TRUE
+# 
 #' Sample.Greenup <- mapPheno(File_List = File_List, PhenoFactor = PhenoFactor,
 #'                            phase = phase, threshold = threshold, year = year,
 #'                            NDVI = NDVI, VIQ = VIQ, DOY = DOY, PR = PR,
@@ -70,6 +70,7 @@
 #' @import stringr
 #' @importFrom raster raster
 #' @importFrom raster stack
+#' @importFrom graphics plot
 #' @importFrom plyr aaply
 #' @importFrom phenex modelNDVI
 #' @importFrom phenex phenoPhase
@@ -269,7 +270,7 @@ mapPheno<- function(File_List = NA, PhenoFactor = NA,
           }
         }
       }
-
+      
       return(Data)
     }; if(verbose){print("GlacierFilter created")}
 
@@ -354,11 +355,11 @@ mapPheno<- function(File_List = NA, PhenoFactor = NA,
       print("Dumping threshold date")
     }
 
-    phenodump <- aaply(.data = year_array,
-                       .fun = NDVIFunction,
-                       .margins = c(1,2),
-                       #.progress = "text",
-                       .parallel = parallel, .paropts = paropts)
+    phenodump <- plyr::aaply(.data = year_array,
+                             .fun = NDVIFunction,
+                             .margins = c(1,2),
+                             #.progress = "text",
+                             .parallel = parallel, .paropts = paropts)
 
     if(verbose){
       print("Phenoscape produced...")

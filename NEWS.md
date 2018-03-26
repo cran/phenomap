@@ -2,6 +2,12 @@
 
 ## Major changes
 
+* Resolved glacier filter bug from version 1.2.0.
+
+# phenomap 1.2.0
+
+## Major changes
+
 * Added `mapTrend` function.  `mapTrend` identifies long-term, pixel-wise trends in phenology.  See function documentation for more.
 
 ## Minor changes
